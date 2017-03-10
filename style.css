@@ -8,8 +8,46 @@ body {
   font-family: sans-serif;
 }
 
-.flex-form {
-  padding: 20px;
-  border-radius: 4px;
+input[type="submit"] {
+  background-color: tomato;
+  color: white;
+}
+
+input, select, label {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+
+.flex-form > * {
   background-color: white;
+  padding: 10px;
+  line-height: 50px;
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  border-right: 1px solid rgba(0,0,0,0.2);
+  -webkit-appearance: none; /* removes radius */
+}
+
+.flex-form > *:last-child {
+  border-right: 0;
+}
+
+/* FLEXBOX */
+
+.cover {
+  height: 100vh;  /* a must to apply align-items!! */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-form {
+  display: flex;
+  border: 20px solid rgba(0,0,0,0.2);
+}
+
+input[type="search"] {
+  flex-basis: 40%;
 }
