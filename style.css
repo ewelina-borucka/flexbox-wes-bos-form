@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://unsplash.it/g/1000");
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.flex-form {
+  padding: 20px;
+  border-radius: 4px;
+  background-color: white;
+}
